@@ -1,0 +1,18 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+.outsidebox {
+	margin: 0 auto;
+	width: 918px;
+	height: 100%;
+}
+aside,#text {
+	float: left;
+}
+aside {
+	width: 248px;
+}
+#text {
+	width: 670px;
+}

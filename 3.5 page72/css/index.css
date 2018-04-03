@@ -1,18 +1,105 @@
-body {
+* {
 	margin: 0;
 	padding: 0;
 }
+body {
+	margin: 0;
+	padding: 0;
+	background: url(../img/bg.gif) repeat-y center;
+}
+@font-face {
+	font-family: 'LeagueGothicRegular';
+	src: url('../fonts/League_Gothic-webfont.eot');
+	src: url('../fonts/League_Gothic-webfont.woff') format('woff'),
+		 url('../fonts/League_Gothic-webfont.ttf') format('truetype'), 
+		 url('../fonts/League_Gothic-webfont.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'LaneNarrowRegular';
+    src: url('../fonts/LANENAR_-webfont.eot?') format('eot'),
+         url('../fonts/LANENAR_-webfont.woff') format('woff'),
+         url('../fonts/LANENAR_-webfont.ttf') format('truetype'),
+         url('../fonts/LANENAR_-webfont.svg#webfontMAZXZguX') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+a, a:link{
+	color:#6db0da;
+	text-decoration:none;
+}
+a:hover, a:active{
+	color:#6db0da;
+	text-decoration:underline;
+}
 .outsidebox {
 	margin: 0 auto;
-	width: 918px;
-	height: 100%;
-}
-aside,#text {
-	float: left;
+	width: 960px;
 }
 aside {
+	display: block;
 	width: 248px;
+	float: left;
+	position: fixed;
+	padding-top: 10px;
+	visibility: hidden;
 }
+nav{
+	text-align:center;
+	margin-bottom:20px;
+}
+nav .logo{
+	font-family: "LeagueGothicRegular", Arial, Helvetica, sans-serif;
+	font-size:43px;
+	text-transform:uppercase;
+	/*text-align:center;*/
+	color:#a08784;
+	text-decoration:none;
+	margin:20px 0;
+	display:block;
+	font-weight:normal;
+	color:#a08784;
+	text-decoration:none;
+	/*text-shadow: #fff 0px 1px 0px;*/
+}
+.navigation .logo span {
+	display: block;
+	background: url(../img/a_portfolio_bg.png) no-repeat center .2em;
+	font-size: 15px;
+	color: #c4bab7;
+	font-weight: normal;
+}
+.navigation ul {
+	font-family: "LeagueGothicRegular", Arial, Helvetica, sans-serif;
+	font-size:30px;
+	padding-top:30px;
+	background:url(../img/nav_bg.png) no-repeat top center;
+	text-transform:uppercase;
+	list-style: none;
+}
+nav ul li{
+	position:relative;
+	margin-top:-7px;
+}
+
+.navigation ul li a, nav ul li a:link{
+	color:#7d6865;
+	text-decoration:none;
+	padding:10px 0 10px 0;
+	display:block;
+	/*text-shadow: #fff 0px 1px 0px;*/
+}
+.navigation ul li a:hover{
+	text-decoration:none;
+	color:#634d4a;
+}
+.navigation ul .active{
+	background:url(../img/nav_active.png) no-repeat 26px .1em;
+}
+
+/*  text   */
 #text {
 	width: 670px;
+	float: right;
 }
